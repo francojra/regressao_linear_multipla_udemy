@@ -24,8 +24,9 @@ head(iris)
 
 fit1 <- lm(Sepal.Length ~ Sepal.Width + Petal.Width, data = iris)
 
-vif(fit1) # vif = variation inflation factor/ fator de inflação da variância
-### vif com valores < 5 são aceitáveis para o modelo
+### vif = variation inflation factor/ fator de inflação da variância
+
+vif(fit1) # vif com valores < 5 são aceitáveis para o modelo
 
 summary(fit1)
 
