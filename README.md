@@ -10,6 +10,5 @@
 1. Carregar pacote;
 2. Regressão Linear Múltipla;
 3. Carregar dados;
-4. Modelos de Regressão Linear Múltipla:
-- VIF.
+4. Modelos de Regressão Linear Múltipla;
 5. Outras funções.
