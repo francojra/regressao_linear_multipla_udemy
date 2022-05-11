@@ -22,4 +22,21 @@ head(iris)
 
 # Modelos de Regressão Linear Múltipla -----------------------------------------------------------------------------------------------------
 
+fit1 <- lm(Sepal.Length ~ Sepal.Width + Petal.Width, data = iris)
 
+vif(fit1) # vif = variation inflation factor/ fator de inflação da variância
+### vif com valores < 5 são aceitáveis para o modelo
+
+summary(fit1)
+
+fit2 <- lm(Sepal.Length ~ Sepal.Width + Petal.Length + Petal.Width, data = iris)
+
+vif(fit2) # Problemático, valores foram > 10
+
+summary(fit2)
+
+fit3 <- lm(Sepal.Length ~ Sepal.Width * Petal.Length, data = iris)
+
+vif(fit3) # Problemático, valores muito altos
+
+summary(fit3)
