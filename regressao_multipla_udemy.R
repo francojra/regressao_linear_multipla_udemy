@@ -41,3 +41,13 @@ fit3 <- lm(Sepal.Length ~ Sepal.Width * Petal.Length, data = iris)
 vif(fit3) # Problemático, valores muito altos
 
 summary(fit3)
+
+# Outras funções ---------------------------------------------------------------------------------------------------------------------------
+
+coefficients(fit1) # Coeficientes
+confint(fit1, level = 0.95) # Intervalos de confiança
+fitted(fit1) # Valores previstos
+residuals(fit1) # Residuais
+anova(fit1) # Tabela ANOVA
+vcov(fit1) # Matriz de covariância
+  
